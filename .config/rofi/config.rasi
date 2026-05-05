@@ -1,0 +1,79 @@
+configuration {
+    /* Modos - sem drun, com binoculars icon no lugar */
+    modi: "run,window,ssh,drun";
+
+    /* Fonte - Jetbrains Mono Nerd Font */
+    font: "JetBrainsMono Nerd Font 10";
+
+    /* Ícones */
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    drun-display-format: "{icon} {name}";
+    display-drun: " ";
+
+    /* Layout minimalista */
+    width: 15%;
+    lines: 8;
+    columns: 1;
+
+    /* Positioning */
+    location: 0;
+    anchor: "north-west";
+    x-offset: 0;
+    y-offset: 0;
+
+    /* Comportamento */
+    disable-history: false;
+    sidebar-mode: false;
+    click-to-exit: true;
+    show-match: true;
+    matching: "fuzzy";
+
+    /* Terminal padrão */
+    terminal: "xterm";
+}
+entry {
+    placeholder: "Pesquisar...";
+    background-color: inherit;
+    text-color: inherit;
+    }
+* {
+
+    /* Cores Colloid Dark */
+    background:                  rgba ( 40, 42, 46, 95 % );   /* <- era 41, 44, 52 */
+    foreground:                  rgba ( 229, 229, 229, 100 % );
+
+    /* Cores Primárias */
+    accent:                      rgba ( 76, 175, 184, 100 % );
+    accent-alt:                  rgba ( 66, 165, 245, 100 % );
+
+    /* Cores de Estado */
+    normal-background:           rgba ( 40, 42, 46, 0 % );    /* <- era 41, 44, 52 */
+    normal-foreground:           @foreground;
+
+    alternate-normal-background: rgba ( 47, 49, 53, 100 % );  /* <- era 48, 51, 59 */
+    alternate-normal-foreground: @foreground;
+
+    selected-normal-background:  rgba ( 76, 175, 184, 35 % );
+    selected-normal-foreground:  @foreground;
+
+    active-background:           rgba ( 66, 165, 245, 25 % );
+    active-foreground:           @accent-alt;
+
+    alternate-active-background: rgba ( 47, 49, 53, 100 % );  /* <- era 48, 51, 59 */
+    alternate-active-foreground: @accent-alt;
+
+    selected-active-background:  rgba ( 66, 165, 245, 50 % );
+    selected-active-foreground:  @foreground;
+
+    urgent-background:           rgba ( 229, 57, 80, 25 % );
+    urgent-foreground:           rgba ( 229, 57, 80, 100 % );
+
+    selected-urgent-background:  rgba ( 229, 57, 80, 50 % );
+    selected-urgent-foreground:  @foreground;
+
+    /* Borders e Separadores */
+    border-color:                @accent;
+    separatorcolor:              rgba ( 76, 175, 184, 30 % );
+}
+
