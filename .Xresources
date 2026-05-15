@@ -1,22 +1,18 @@
 Xcursor.theme: volantes_cursors
 Xcursor.size:  25
 
-! Configuracao xterm estilo Alacritty (versao corrigida)
 XTerm*faceName: JetBrains Mono Nerd Font
 XTerm*faceSize: 12
 XTerm*renderFont: true
 
-! Window
 XTerm*background: #000000
 XTerm*foreground: #f1f1f0
 XTerm*transparency: 30
 XTerm*saveUnder: true
 XTerm*internalBorder: 4
 
-! Geometry (sem comentario na mesma linha)
 XTerm*geometry: 80x24
 
-! Scroll
 XTerm*saveLines: 2000
 XTerm*scrollBar: true
 XTerm*scrollTtyOutput: false
@@ -31,11 +27,9 @@ XTerm*cursorBlink: true
 XTerm*decFlags: 0
 XTerm*ttyModes: "\E[?25h\E[?0c\E[?1h\E=\E]12;rgb:ffff/ffff/ffff\E\\"
 
-! Bell visual only
 XTerm*bellIsUrgent: false
 XTerm*visualBell: true
 
-! Palette Alacritty padrao (SEM comentarios nas linhas de cor)
 XTerm*color0:  #000000
 XTerm*color1:  #ff6c6b
 XTerm*color2:  #a8ff60
@@ -53,10 +47,8 @@ XTerm*color13: #ff77a8
 XTerm*color14: #b1f4ff
 XTerm*color15: #f7f7f7
 
-! Faz seleção ir pro CLIPBOARD também
 XTerm*selectToClipboard: true
 
-! Atalhos modernos de copiar/colar (Ctrl+Shift+C/V)
 XTerm*VT100.translations: #override \
   Shift Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
   Shift Ctrl <Key>V: insert-selection(CLIPBOARD)
